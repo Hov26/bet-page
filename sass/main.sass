@@ -1,9 +1,36 @@
 @import "reset.sass"
 @import "colors.sass"
 @import "common.sass"
+@import "sidebar.sass"
+@import "bets-view.sass"
 
 
 body  
   font-family: Roboto ,Arial ,Helvetica ,sans-serif
   min-width: 320px
 
+.hide
+  display: none
+
+button, input
+  border: none
+  border-radius: 0
+  padding: 0
+  -webkit-appearance: none
+  &:focus
+    outline: none
+    user-select: none
+
+button, input[type='submit'] 
+  cursor: pointer
+
+
+.main-page
+  width: 100%
+  background-color: $bgGray
+  padding: 20px
+  .container
+    display: flex
+    width: 100%
+    max-width: 980px
+    margin: 0 auto

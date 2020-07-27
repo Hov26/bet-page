@@ -1,0 +1,193 @@
+.sidebar
+  width: 22%
+  flex-grow: 1
+
+.view-items-wrapper
+  display: flex
+  border-bottom: 1px solid $pink
+
+.pre-match, .live
+  margin: 0 0 0 2px
+
+.view-list-items
+  display: flex
+  flex-grow: 1
+
+.tab-btn
+  font-size: 12px
+  padding: 10px 8px 10px 14px
+  background: $eventHeadingBgGray
+  color: $white
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  transition: color 0.1s linear
+  &:hover, &.active
+    background: $pink
+  &:focus
+    outline: none
+
+.games-count
+  background: rgba(0,0,0, 0.2)
+  font-size: 10px
+  padding: 4px 6px
+  border-radius: 8px
+
+.filter-view-container
+  background: $eventGray  
+  padding: 2px 4px
+
+.view-list
+  display: flex
+  padding: 2px 0
+
+.view-tab
+  font-size: 12px
+  color: $white
+  padding: 10px 8px
+  background: $eventGray
+  .time-filter
+    display: flex
+
+.play-tab
+  border-left: 1px solid $bgGray
+  border-right: 1px solid $bgGray
+
+.multi-tab
+  flex-grow: 1
+
+.multi-select
+  display: flex
+  justify-content: flex-end
+
+.toggle-btn
+  width: 26px
+  margin: 0 0 0 8px
+  background: $green
+  border-radius: 9px
+  cursor: pointer
+  padding: 0
+  .round
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background: $white
+    transition: all 0.1s ease
+    &.active
+      transform: translate(13px, 0)
+
+
+.search-minimize-wrap
+  display: flex
+  padding: 2px 0
+
+.search-form
+  flex-grow: 1
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    right: 2px 
+    top: 0
+    width: 26px
+    height: 26px
+    border: 1px solid red
+
+.search-input
+  width: 100% 
+  border: 1px solid $eventHeadingGray
+  background: $eventGray
+  padding: 6px 35px 6px 10px
+  color: $white
+  border-color: $eventHeadingGray
+  transition: all 0.1s linear 
+  &::placeholder
+    color: $eventHeadingGray
+  &:focus
+    border-color: $white
+    outline: none
+
+
+.minimize-sidebar
+  width: 40px
+  background: transparent
+  margin: 0 0 0 8px
+  color: $white
+
+.acc-item
+  background: $eventHeadingBgGray
+  color: $white
+  padding: 0 0 0 8px
+  height: 30px
+  font-size: 12px
+  margin: 1px 0 0 0
+  user-select: none
+  display: flex
+  align-items: center
+  height: 30px
+  justify-content: space-between
+  cursor: pointer
+  .arrow-up
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all 0.1s linear
+    &.active
+      background: $green
+    &:hover
+      background: $eventHoverGray
+
+
+#accContent
+  background: $eventGray
+  padding: 6px
+  .form-group
+    display: flex
+    justify-content: space-between
+    margin: 4px 0 0 0
+  .form-btn
+    width: 50%
+    text-align: center
+    padding: 8px
+    background: transparent
+    border: 1px solid $eventHeadingGray
+    color: $white
+    &.active
+      background: $green
+      border-color: $green
+    &:first-child
+      margin: 0 2px 0 0
+    &:last-child
+      margin: 0 0 0 2px
+
+.form-info
+  font-size: 10px
+  color: $eventHeadingGray
+  letter-spacing: 1px
+  word-spacing: 2px
+  .learn-more
+    color: white
+    text-decoration: none
+    line-height: 12px
+
+.acc-heading
+  display: flex
+  align-items: center
+  .star
+    margin: 0 4px 0 0
+
+.star
+  width: 14px
+  height: 14px
+  clip-path: polygon(50% 0%, 70% 26%, 98% 35%, 76% 57%, 79% 91%, 50% 70%, 21% 91%, 27% 58%, 2% 35%, 34% 25%)
+  background: $starGold
+
+.divider
+  width: 100%
+  height: 1px
+  background-color: $eventHeadingGray
+  margin: 8px 0
