@@ -1,5 +1,5 @@
 .sidebar
-  width: 22%
+  width: 24%
   flex-grow: 1
 
 .view-items-wrapper
@@ -15,19 +15,23 @@
 
 .tab-btn
   font-size: 12px
-  padding: 10px 8px 10px 14px
+  padding: 10px 8px
   background: $eventHeadingBgGray
   color: $white
   width: 100%
   display: flex
   align-items: center
-  justify-content: space-between
   cursor: pointer
   transition: color 0.1s linear
   &:hover, &.active
     background: $pink
   &:focus
     outline: none
+
+
+
+.dashboard-icon
+  background-position: -10px -151px
 
 .games-count
   background: rgba(0,0,0, 0.2)
@@ -41,22 +45,52 @@
 
 .view-list
   display: flex
-  padding: 2px 0
+  padding: 4px 0
 
 .view-tab
   font-size: 12px
-  color: $white
-  padding: 10px 8px
+  color: $eventHeadingGray
+  padding: 6px 11px
   background: $eventGray
+  display: flex
+  justify-content: center
+  align-items: center
+  &.time-tab
+    min-width: 66px
   .time-filter
     display: flex
+    align-items: center
+    cursor: pointer
+  .time-icon
+    background-position: -122px -44px
+    height: 18px
+    width: 20px
+  .dropdown-icon
+    background-position: -227px -63px
+    width: 9px
+    margin: 0 0 0 3px
+  .mouse-icon
+    background-position: -120px -81px
+    height: 17px
 
 .play-tab
   border-left: 1px solid $bgGray
   border-right: 1px solid $bgGray
+  .play-icon
+    background-position: -195px -105px
+    width: 10px
+
+.play-tab
+  padding: 6px 8px
+
+.mouse-tab
+  padding: 6px
 
 .multi-tab
   flex-grow: 1
+  padding: 4px
+  display: flex
+  justify-content: flex-end
 
 .multi-select
   display: flex
@@ -64,19 +98,20 @@
 
 .toggle-btn
   width: 26px
+  height: 17px
   margin: 0 0 0 8px
   background: $green
   border-radius: 9px
   cursor: pointer
   padding: 0
   .round
-    width: 12px
-    height: 12px
+    width: 13px
+    height: 13px
     border-radius: 50%
     background: $white
     transition: all 0.1s ease
     &.active
-      transform: translate(13px, 0)
+      transform: translate(11px, 0px)
 
 
 .search-minimize-wrap
@@ -86,14 +121,15 @@
 .search-form
   flex-grow: 1
   position: relative
-  &:after
-    content: ''
+  .search-btn
     position: absolute
     right: 2px 
     top: 0
     width: 26px
     height: 26px
-    border: 1px solid red
+    background-image: url('../img/img_sprites.png')
+    background-repeat: no-repeat
+    background-position: -117px -111px
 
 .search-input
   width: 100% 
@@ -111,18 +147,25 @@
 
 
 .minimize-sidebar
-  width: 40px
+  width: 25px
   background: transparent
   margin: 0 0 0 8px
   color: $white
+  .minimize-icon
+    background-position: -10px -10px
+    width: 20px
+    height: 18px
+
+.acc-wrapper
+  margin: 4px 0 0 0
 
 .acc-item
   background: $eventHeadingBgGray
-  color: $white
+  color: $eventHeadingGray
   padding: 0 0 0 8px
   height: 30px
   font-size: 12px
-  margin: 1px 0 0 0
+  margin: 2px 0 0 0
   user-select: none
   display: flex
   align-items: center
@@ -137,9 +180,9 @@
     align-items: center
     transition: all 0.1s linear
     &.active
-      background: $green
+      background-color: $green
     &:hover
-      background: $eventHoverGray
+      background-color: $eventHoverGray
 
 
 #accContent
@@ -155,10 +198,12 @@
     padding: 8px
     background: transparent
     border: 1px solid $eventHeadingGray
-    color: $white
+    color: $formButtonColor
+    font-size: 12px
     &.active
       background: $green
       border-color: $green
+      color: $white
     &:first-child
       margin: 0 2px 0 0
     &:last-child
@@ -168,7 +213,7 @@
   font-size: 10px
   color: $eventHeadingGray
   letter-spacing: 1px
-  word-spacing: 2px
+  word-spacing: 1px
   .learn-more
     color: white
     text-decoration: none
@@ -179,12 +224,42 @@
   align-items: center
   .star
     margin: 0 4px 0 0
+  .bg-icon
+    margin: 0 8px 0 0
+    width: 20px
+    height: 16px
+  .favourite-icon
+    background-position: -46px -83px
+  .heart-icon
+    background-position: -122px -10px
+  .popular-icon
+    background-position: -10px -83px
+  .football-icon
+    background-position: -158px -106px
+  .ball-icon
+    background-position: -50px -10px
+  .tennis-icon
+    background-position: -10px -46px
+  .basketball-icon
+    background-position: -86px -10px
+  .valeyball-icon
+    background-position: -82px -83px
+  .hockey-icon
+    background-position: -44px -151px
+  .baseball-icon
+    background-position: -50px -46px
+  .football-icon
+    background-position: -158px -106px
+  .more-icon
+    background-position: -75px -147px
+  
 
-.star
-  width: 14px
-  height: 14px
-  clip-path: polygon(50% 0%, 70% 26%, 98% 35%, 76% 57%, 79% 91%, 50% 70%, 21% 91%, 27% 58%, 2% 35%, 34% 25%)
-  background: $starGold
+
+
+// .star
+//   width: 14px
+//   height: 14px
+//   background: $starGold
 
 .divider
   width: 100%

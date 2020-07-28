@@ -22,15 +22,17 @@
           <div class="view-tabs">
             <ul class="view-items-wrapper">
               <li class="view-list-items dashboard">
-                <button class="tab-btn">ic</button>
+                <button class="tab-btn jc-c">
+                  <div class="bg-icon dashboard-icon"></div>
+                </button>
               </li>
               <li class="view-list-items live">
-                <button class="tab-btn">
+                <button class="tab-btn jc-sb">
                   LIVE <span class="games-count">45</span>
                 </button>
               </li>
               <li class="view-list-items pre-match">
-                <button class="tab-btn active">
+                <button class="tab-btn jc-sb active">
                   PRE-MATCH <span class="games-count">657</span>
                 </button>
               </li>
@@ -38,17 +40,18 @@
           </div>
           <div class="filter-view-container">
             <ul class="view-list">
-              <li class="view-tab">
-                <div class="tab time-filter">
-                  <div class="time-icon">ic</div>
-                  <p class="time">72 H</p>
+              <li class="view-tab time-tab">
+                <div class="tab time-filter" role="button">
+                  <div class="time-icon bg-icon"></div>
+                  <p class="time">72H</p>
+                  <div class="bg-icon dropdown-icon"></div>
                 </div>
               </li>
               <li class="view-tab play-tab">
-                <div class="tab play-icon">PL</div>
+                <button class="tab bg-icon play-icon"></button>
               </li>
-              <li class="view-tab">
-                <div class="tab mouse-icon">MS</div>
+              <li class="view-tab mouse-tab">
+                <button class="tab bg-icon mouse-icon"></button>
               </li>
               <li class="view-tab multi-tab">
                 <div class="tab multi-select">
@@ -66,35 +69,37 @@
                   placeholder="Competition or a team"
                   class="search-input"
                 />
+                <button type="submit" class="search-btn"></button>
               </form>
               <button class="minimize-sidebar">
-                <div class="minimize-icon">M</div>
+                <div class="minimize-icon bg-icon"></div>
               </button>
             </div>
           </div>
           <div class="acc-wrapper">
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon star"></div>
+                <div class="favourite-icon bg-icon"></div>
                 Favourites
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">aaaaa</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon heart-icon"></div>
                 My Favourite team
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">
               <form action="" class="search-form">
                 <input
                   type="text"
-                  placeholder="Search for a team"
+                  placeholder="Competition or a team"
                   class="search-input"
                 />
+                <button type="submit" class="search-btn"></button>
                 <div class="form-group">
                   <button type="submit" class="form-btn active">CONFIRM</button>
                   <button type="reset" class="form-btn">CANCEL</button>
@@ -102,82 +107,81 @@
               </form>
               <div class="divider"></div>
               <p class="form-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                neque dolore sunt laborum saepe assumenda, ut, delectus officiis
-                adipisci quidem fuga iusto.
+                From now on you can choose your favorite football team and even
+                get cool bonuses betting on it. Just search to add it.
                 <a href="#" rel="noopener" class="learn-more">Learn more</a>
               </p>
             </div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon popular-icon"></div>
                 Popular
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon ball-icon"></div>
                 Football
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon tennis-icon"></div>
                 Tennis
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon basketball-icon"></div>
                 Basketball
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon valeyball-icon"></div>
                 Valeyball
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon hockey-icon"></div>
                 Ice Hockey
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon baseball-icon"></div>
                 Baseball
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon football-icon"></div>
                 American Football
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
             <div class="hide" id="accContent">bbbb</div>
             <div class="acc-item">
               <div class="acc-heading">
-                <div class="heading-icon"></div>
+                <div class="bg-icon more-icon"></div>
                 More sports
               </div>
-              <div class="arrow-up">&#11105;</div>
+              <div class="arrow-up"></div>
             </div>
           </div>
         </aside>
