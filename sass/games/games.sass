@@ -1,0 +1,91 @@
+.bets-container
+  width: 70%
+  flex-grow: 1
+  margin: 0 0 0 5px
+  
+.bets-col
+  width: 50%
+  flex-grow: 1
+
+.left-border
+  border-left: 1px solid $borderBlue
+
+.game-item
+  .game-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 11px
+    height: 30px
+    padding: 2px 0 2px 8px
+    box-sizing: border-box
+    background-color: $eventHeadingBgGray
+  .game-info
+    display: flex
+  .game-time, .vs, .events-count
+    color: $eventHeadingDarkGray
+  .vs
+    padding: 0 6px
+  .game-name
+    color: $formButtonColor
+    margin: 0 0 0 6px
+  .game-more-events
+    display: flex
+  .arrow-right
+    background-position: -222px -37px
+  .events-count
+    padding: 0 2px 0 5px
+  .bg-icon
+    width: 24px
+    & + .bg-icon
+      border-left: 1px solid $borderBlue
+  .star
+    margin: 0 2px
+    background-position-x: -191px
+  .statistic
+    background-position: -189px -135px
+  .play
+    background-position: -190px -73px
+  .tv
+    background-position: -102px -148px
+  .game-body
+    display: flex
+    align-items: center
+    height: 28px
+    margin: 2px 0 0 0
+  .game-col
+    background-color: $eventHeadingBgDarkGray
+    height: 28px
+    font-size: 12px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 8px
+    transition: all 0.1s linear
+    cursor: pointer
+    &:hover, &.active
+      background-color: $pink
+    &:hover .team-name, &:hover .coefficient
+      color: $white
+  .result-col
+    width: 35%
+    flex-grow: 1
+  .x-result-col
+    width: 30%
+    margin: 0 2px
+  .team-name
+    color: $eventHeadingGray
+    max-width: 108px
+  .team-coefficient
+    display: flex
+    align-items: center
+  .coefficient
+    color: $betGold
+  .up
+    background-position: -223px -112px
+  .down
+    background-position: -223px -87px
+  .x-icon
+    background-position: -228px -8px
+
+
