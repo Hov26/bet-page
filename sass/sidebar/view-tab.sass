@@ -1,0 +1,88 @@
+.view-tab
+  font-size: 12px
+  color: $eventHeadingGray
+  padding: 6px 11px
+  background: $eventGray
+  display: flex
+  justify-content: center
+  align-items: center
+  &.time-tab
+    min-width: 66px
+  .time-filter
+    display: flex
+    align-items: center
+    cursor: pointer
+  .time-icon
+    background-position: -122px -44px
+    height: 18px
+    width: 20px
+  .dropdown-icon
+    background-position: -227px -63px
+    width: 9px
+    margin: 0 0 0 3px
+  .mouse-icon
+    background-position: -120px -81px
+    height: 17px
+
+.filter-view-container
+  background: $eventGray  
+  padding: 2px 4px
+
+.event-count
+  background: rgba(0,0,0, 0.2)
+  font-size: 10px
+  padding: 4px 6px
+  border-radius: 8px
+
+.view-list
+  display: flex
+  padding: 4px 0
+
+.view-list-items
+  display: flex
+  flex-grow: 1
+
+.view-items-wrapper
+  display: flex
+  border-bottom: 1px solid $pink
+
+.pre-match, .live
+  margin: 0 0 0 2px
+
+.tab-btn
+  font-size: 12px
+  padding: 10px 8px
+  background: $eventHeadingBgGray
+  color: $white
+  width: 100%
+  display: flex
+  align-items: center
+  cursor: pointer
+  transition: color 0.1s linear
+  &:hover, &.active
+    background: $pink
+  &:focus
+    outline: none
+
+.play-tab
+  border-left: 1px solid $bgGray
+  border-right: 1px solid $bgGray
+  .play-icon
+    background-position: -195px -105px
+    width: 10px
+
+.play-tab
+  padding: 6px 8px
+
+.mouse-tab
+  padding: 6px
+
+.multi-tab
+  flex-grow: 1
+  padding: 4px
+  display: flex
+  justify-content: flex-end
+
+.multi-select
+  display: flex
+  justify-content: flex-end

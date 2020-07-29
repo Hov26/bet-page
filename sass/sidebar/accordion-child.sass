@@ -1,0 +1,58 @@
+.popular-list-item
+  justify-content: space-between
+  &:hover, &.active
+    background-color: $eventHeadingBgGray
+    color: $formButtonColor
+
+.country-list-item
+  background-color: $sidebarEventGray
+  color: $eventHeadingDarkGray
+  padding-right: 0
+  &:hover .arrow-up
+    display: block
+    background-color: $eventHoverGray
+  .arrow-up
+    margin-left: auto
+
+
+.league-list
+  padding: 5px
+  background-color: $listBgDarkGray
+.league-item
+  padding: 0 6px 0 14px
+  &.active
+    background-color: $eventHeadingBgGray
+  .bg-icon
+    margin-left: auto
+
+.league-input
+  padding: 0
+  height: initial
+  width: initial
+  margin-bottom: 0
+  display: none
+  cursor: pointer
+  &:checked + label:after
+    content: url('../img/checked-icon.png')
+    display: block
+    position: absolute
+    top: 0
+    left: 2px
+    width: 6px
+    height: 14px
+
+.league-label 
+  position: relative
+  cursor: pointer
+  display: block
+  &:before 
+    content: ''
+    -webkit-appearance: none
+    background-color: $eventHeadingDarkGray
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+    padding: 7px
+    display: inline-block
+    position: relative
+    vertical-align: middle
+    cursor: pointer
+    margin-right: 5px

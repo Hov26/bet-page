@@ -1,0 +1,119 @@
+.list-item
+  height: 30px
+  background-color: $sidebarEventGray
+  color: $eventHeadingDarkGray
+  font-size: 12px
+  padding: 0 10px
+  display: flex
+  align-items: center
+  margin: 2px 0 0 0
+
+.toggle-btn
+  width: 26px
+  height: 17px
+  margin: 0 0 0 8px
+  background: $green
+  border-radius: 9px
+  cursor: pointer
+  padding: 0
+  .round
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    background: $white
+    transition: all 0.1s ease
+    &.active
+      transform: translate(11px, 0px)
+
+.divider
+  width: 100%
+  height: 1px
+  background-color: $eventHeadingGray
+  margin: 8px 0
+
+.arrow-up
+  width: 30px
+  height: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all 0.1s linear
+  background-image: url('../img/img_sprites.png')
+  background-position: -27px -172px
+  &.active
+    background-color: $green
+  &.open
+    transform: rotate(180deg)
+  &:hover
+    background-color: $eventHoverGray
+  &.hidden
+    display: none
+
+.dashboard-icon
+  background-position: -10px -151px
+
+.star
+  background-position: -196px -42px
+  width: 12px
+  &:hover
+    background-position: -196px -10px
+.star-filled
+  background-position: -196px -10px
+
+.bg-flag
+  background-image: url('../img/img_sprites.png')
+  background-repeat: no-repeat
+  width: 20px
+  height: 14px
+  margin: 0 6px 0 0
+  &.spain
+    background-position: -158px -42px
+  &.italy
+    background-position: -86px -119px
+  &.uk
+    background-position: -158px -74px
+  &.jp
+    background-position: -158px -10px
+  &.argentina
+    background-position: -10px -119px
+
+
+.dashboard-icon
+  background-position: -10px -151px
+
+  
+.favourite-icon
+  background-position: -46px -83px
+
+.heart-icon
+  background-position: -122px -10px
+
+.popular-icon
+  background-position: -10px -83px
+
+.football-icon
+  background-position: -158px -106px
+
+.ball-icon
+  background-position: -50px -10px
+
+.tennis-icon
+  background-position: -10px -47px
+
+.basketball-icon
+  background-position: -86px -10px
+
+.valeyball-icon
+  background-position: -82px -83px
+
+.hockey-icon
+  background-position: -44px -151px
+
+.baseball-icon
+  background-position: -50px -46px
+
+.football-icon
+  background-position: -158px -106px
+
+.more-icon
+  background-position: -75px -147px

@@ -1,8 +1,8 @@
 @import "reset.sass"
 @import "colors.sass"
 @import "common.sass"
-@import "sidebar.sass"
 @import "bets-view.sass"
+@import "sidebar/sidebar.sass"
 
 
 body  
@@ -17,10 +17,6 @@ body
   background-repeat: no-repeat
   width: 15px
   height: 14px
-
-.arrow-up
-  background-image: url('../img/img_sprites.png')
-  background-position: -27px -172px
 
 
 .jc-c
@@ -52,3 +48,10 @@ button, input[type='submit']
     width: 100%
     max-width: 980px
     margin: 0 auto
+
+
+.text-ellips
+  max-width: 200px
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden

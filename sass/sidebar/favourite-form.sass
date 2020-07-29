@@ -1,0 +1,73 @@
+.search-form
+  flex-grow: 1
+  position: relative
+  .search-btn
+    position: absolute
+    right: 2px 
+    top: 0
+    width: 26px
+    height: 26px
+    background-image: url('../img/img_sprites.png')
+    background-repeat: no-repeat
+    background-position: -117px -111px
+
+.search-minimize-wrap
+  display: flex
+  padding: 2px 0
+
+.minimize-sidebar
+  width: 25px
+  background: transparent
+  margin: 0 0 0 8px
+  color: $white
+  .minimize-icon
+    background-position: -10px -10px
+    width: 20px
+    height: 18px  
+
+.search-input
+  width: 100% 
+  border: 1px solid $eventHeadingGray
+  background: $eventGray
+  padding: 6px 35px 6px 10px
+  color: $white
+  border-color: $eventHeadingGray
+  transition: all 0.1s linear 
+  &::placeholder
+    color: $eventHeadingGray
+  &:focus
+    border-color: $white
+    outline: none
+
+.form-group
+  display: flex
+  justify-content: space-between
+  margin: 4px 0 0 0
+
+.form-btn
+  width: 50%
+  text-align: center
+  padding: 8px
+  background: transparent
+  border: 1px solid $eventHeadingGray
+  color: $formButtonColor
+  font-size: 12px
+  &.active
+    background: $green
+    border-color: $green
+    color: $white
+  &:first-child
+    margin: 0 2px 0 0
+  &:last-child
+    margin: 0 0 0 2px
+
+.form-info
+  font-size: 10px
+  padding: 4px 8px
+  color: $eventHeadingGray
+  letter-spacing: 1px
+  word-spacing: 1px
+  .learn-more
+    color: white
+    text-decoration: none
+    line-height: 12px
