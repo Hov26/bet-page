@@ -1,35 +1,29 @@
 .popular-list-item
   justify-content: space-between
   &:hover, &.active
-    background-color: $eventHeadingBgGray
-    color: $formButtonColor
+    background-color: $gray-600
+    color: $gray-050
 
 .country-list-item
-  background-color: $sidebarEventGray
-  color: $eventHeadingDarkGray
+  background-color: $gray-700
+  color: $gray-100
   padding-right: 0
   &:hover .arrow-up
     display: block
-    background-color: $eventHoverGray
+    background-color: $gray-600
   .arrow-up
     margin-left: auto
 
 
 .league-list
   padding: 3px 5px 5px 5px
-  background-color: $listBgDarkGray
+  background-color: $gray-1200
 .league-item
   padding: 0 6px 0 14px
-  &:first-child
-    border-top-left-radius: 2px
-    border-top-right-radius: 2px
-  &:last-child
-    border-bottom-left-radius: 2px
-    border-bottom-right-radius: 2px
   &.active .star, &:hover .star
     background-position: -196px -10px
   &:hover, &.active
-    background-color: $eventHeadingBgGray
+    background-color: $gray-600
   .bg-icon
     margin-left: auto
 
@@ -56,7 +50,7 @@
   &:before 
     content: ''
     -webkit-appearance: none
-    background-color: $eventHeadingDarkGray
+    background-color: $gray-100
     padding: 7px
     display: inline-block
     position: relative

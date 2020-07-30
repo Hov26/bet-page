@@ -1,13 +1,35 @@
 /* Reset css */
-* 
-  box-sizing: border-box
-  
-h1, h2, h3, h4, h5, h6, p, address, ul, li, figure, body
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul 
   margin: 0
   padding: 0
 
-ul
-  list-style: none
+* 
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
 
-figure 
-  font-size: 0
+ul 
+  list-style-type: none
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited 
+    text-decoration: none
+
+html 
+  font-family: Roboto ,Arial ,Helvetica ,sans-serif
+  -webkit-font-smoothing: subpixel-antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-size: 12px
+

@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <section class="main-page">
+    <main class="main-page">
       <div class="container">
         <aside class="sidebar">
           <div class="view-tabs">
@@ -77,7 +77,7 @@
             </div>
           </div>
           <div class="acc-wrapper">
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="favourite-icon bg-icon"></div>
                 Favourites
@@ -86,7 +86,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">aaaaa</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon heart-icon"></div>
                 My Favourite team
@@ -117,7 +117,7 @@
                 <a href="#" rel="noopener" class="learn-more">Learn more</a>
               </p>
             </div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon popular-icon"></div>
                 Popular
@@ -142,7 +142,7 @@
                 <li class="list-item popular-list-item">Ligue 1</li>
               </ul>
             </div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon ball-icon"></div>
                 Football
@@ -189,7 +189,7 @@
                 </li>
               </ul>
             </div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon tennis-icon"></div>
                 Tennis
@@ -220,7 +220,7 @@
                     <button class="arrow-up hidden"></button>
                   </div>
                   <ul class="league-list">
-                    <li class="league-item active list-item">
+                    <li class="league-item active list-item top-radius">
                       <div class="league-checkbox">
                         <input type="checkbox" id="html" class="league-input" />
                         <label class="league-label text-ellips" for="html"
@@ -242,7 +242,7 @@
                       </div>
                       <div class="bg-icon star star"></div>
                     </li>
-                    <li class="league-item list-item">
+                    <li class="league-item list-item bottom-radius">
                       <div class="league-checkbox">
                         <input
                           type="checkbox"
@@ -273,7 +273,7 @@
                 </li>
               </ul>
             </div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon basketball-icon"></div>
                 Basketball
@@ -282,7 +282,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">Valeyball content</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon valeyball-icon"></div>
                 Valeyball
@@ -291,7 +291,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">Ice Hockey content</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon hockey-icon"></div>
                 Ice Hockey
@@ -300,7 +300,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">Baseball content</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon baseball-icon"></div>
                 Baseball
@@ -309,7 +309,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">American Football content</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon football-icon"></div>
                 American Football
@@ -318,7 +318,7 @@
               <button class="arrow-up"></button>
             </div>
             <div class="hide" id="accContent">More sports content</div>
-            <div class="acc-item">
+            <div class="acc-item flex-jc-ac">
               <div class="acc-heading">
                 <div class="bg-icon more-icon"></div>
                 More sports
@@ -328,46 +328,353 @@
             </div>
           </div>
         </aside>
+        <!-- bets -->
         <div class="bets-container">
           <div class="bets-col">
-            <div class="game-item">
-              <div class="game-header">
-                <div class="game-info">
-                  <p class="game-time">01:00</p>
-                  <p class="game-name">
-                    AC Chievo Verona
-                    <span class="vs">vs</span>
-                    UC Sampdoria
-                  </p>
+            <!-- Current day games -->
+            <div class="one-day-games-container">
+              <div class="games-list">
+                <!-- Today games -->
+                <div class="games-date-container flex-jc-ac top-radius">
+                  <div class="games-date">TODAY. JULY 31, 2020</div>
+                  <button class="arrow-up bet-arrow-up"></button>
                 </div>
-                <div class="game-more-events">
-                  <div class="bg-icon tv"></div>
-                  <div class="bg-icon play"></div>
-                  <div class="bg-icon statistic"></div>
-                  <div class="bg-icon star"></div>
-                  <p class="events-count">+32</p>
-                  <button class="bg-icon arrow-right"></button>
-                </div>
-              </div>
-              <div class="game-body">
-                <div class="game-col result-col">
-                  <p class="team-name text-ellips">AC Chievo Verona</p>
-                  <div class="team-coefficient">
-                    <div class="bg-icon up"></div>
-                    <span class="coefficient">1.95</span>
+                <!-- Game item 1 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          Carpi FC
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">US Sassuolo</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon tv"></button>
+                      <button class="bg-icon play"></button>
+                      <button class="bg-icon statistic"></button>
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+144</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">Carpi FC</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.96</span>
+                      </div>
+                    </div>
+
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        <div class="bg-icon down"></div>
+                        3.15
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">US Sassuolo</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">3.15</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Game item 2 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">03:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          Juventus FC
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">Empoli FC</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+14</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">Juventus FC</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.72</span>
+                      </div>
+                    </div>
 
-                <div class="game-col x-result-col">
-                  <div class="bg-icon x-icon"></div>
-                  <span class="coefficient">1.95</span>
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        3.66
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">Empoli FC</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <!-- Current day games -->
+            <div class="one-day-games-container">
+              <div class="games-list">
+                <!-- Today games -->
+                <div class="games-date-container flex-jc-ac top-radius">
+                  <div class="games-date">TOMMOROW. APRIL 2, 2020</div>
+                  <button class="arrow-up bet-arrow-up"></button>
+                </div>
+                <!-- Game item 1 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          Manchester United Manchester United
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">
+                          Borussia Dortmun Borussia Dortmun
+                        </p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon statistic"></button>
+                      <p class="events-count">+56</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">
+                        Manchester United Manchester United
+                      </p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">2.65</span>
+                      </div>
+                    </div>
 
-                <div class="game-col result-col">
-                  <p class="team-name text-ellips">AC Chievo Verona</p>
-                  <div class="team-coefficient">
-                    <div class="bg-icon down"></div>
-                    <span class="coefficient">1.95</span>
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        <div class="bg-icon down"></div>
+                        1.95
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">
+                        Borussia Dortmun Borussia Dortmun
+                      </p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">2.26</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Game item 2 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          AC Chievo Verona
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">UC Sampdoria</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon statistic"></button>
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+32</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
+
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        1.95
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">1.74</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Game item 3 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          Carpi FC
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">US Sassuolo</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+144</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">Carpi FC</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.96</span>
+                      </div>
+                    </div>
+
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        <div class="bg-icon down"></div>
+                        3.15
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">US Sassuolo</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">3.95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Game item 4 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          AC Chievo Verona
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">UC Sampdoria</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon tv"></button>
+                      <button class="bg-icon play"></button>
+                      <button class="bg-icon statistic"></button>
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+32</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
+
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        1.95
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Game item 5 -->
+                <div class="game-item">
+                  <div class="game-header flex-jc-ac top-radius">
+                    <div class="game-info">
+                      <p class="game-time">01:00</p>
+                      <div class="game-name">
+                        <p class="game-team-team text-ellips">
+                          AC Chievo Verona
+                        </p>
+                        <span class="vs">vs</span>
+                        <p class="game-team-team text-ellips">UC Sampdoria</p>
+                      </div>
+                    </div>
+                    <div class="game-more-events">
+                      <button class="bg-icon tv"></button>
+                      <button class="bg-icon play"></button>
+                      <button class="bg-icon statistic"></button>
+                      <button class="bg-icon star"></button>
+                      <p class="events-count">+32</p>
+                      <button class="bg-icon arrow-right"></button>
+                    </div>
+                  </div>
+                  <div class="game-body">
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon up"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
+
+                    <div class="game-col flex-jc-ac x-result-col">
+                      <div class="bg-icon x-icon"></div>
+                      <span class="coefficient">
+                        <div class="bg-icon down"></div>
+                        1.95
+                      </span>
+                    </div>
+
+                    <div class="game-col flex-jc-ac result-col">
+                      <p class="team-name text-ellips">AC Chievo Verona</p>
+                      <div class="team-coefficient">
+                        <div class="bg-icon down"></div>
+                        <span class="coefficient">1.95</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -376,7 +683,7 @@
           <div class="bets-col"></div>
         </div>
       </div>
-    </section>
+    </main>
   </body>
   <script src="/js/main.js"></script>
 </html>

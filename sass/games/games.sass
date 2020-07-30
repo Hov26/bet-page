@@ -8,37 +8,47 @@
   flex-grow: 1
 
 .left-border
-  border-left: 1px solid $borderBlue
+  border-left: 1px solid $gray-800
+
+.one-day-games-container
+  margin: 5px 0 0 0
 
 .game-item
+  margin: 4px 0 0 0
   .game-header
-    display: flex
-    justify-content: space-between
-    align-items: center
     font-size: 11px
     height: 30px
     padding: 2px 0 2px 8px
     box-sizing: border-box
-    background-color: $eventHeadingBgGray
+    background-color: $gray-600
+    border-top: 1px solid $gray-500
+    transition: all 0.1s linear
+    &:hover
+      background-color: $gray-300
   .game-info
     display: flex
   .game-time, .vs, .events-count
-    color: $eventHeadingDarkGray
+    color: $gray-100
   .vs
     padding: 0 6px
   .game-name
-    color: $formButtonColor
-    margin: 0 0 0 6px
-  .game-more-events
     display: flex
+    color: $gray-050
+    margin: 0 0 0 6px
+  .game-team-team
+    max-width: 110px
   .arrow-right
     background-position: -222px -37px
   .events-count
-    padding: 0 2px 0 5px
+    padding: 0 2px 0 4px
+    min-width: 31px
+  .game-more-events
+    display: flex
+    & > .bg-icon
+      width: 24px
   .bg-icon
-    width: 24px
     & + .bg-icon
-      border-left: 1px solid $borderBlue
+      border-right: 1px solid $gray-800
   .star
     margin: 0 2px
     background-position-x: -191px
@@ -54,16 +64,20 @@
     height: 28px
     margin: 2px 0 0 0
   .game-col
-    background-color: $eventHeadingBgDarkGray
+    background-color: $gray-1100
+    border-top: 1px solid $gray-900
     height: 28px
     font-size: 12px
-    display: flex
-    justify-content: space-between
-    align-items: center
     padding: 0 8px
     transition: all 0.1s linear
     cursor: pointer
-    &:hover, &.active
+    &:first-child
+      border-bottom-left-radius: 2px
+    &:last-child
+      border-bottom-right-radius: 2px
+    &:hover
+      background-color: $gray-400
+    &.active
       background-color: $pink
     &:hover .team-name, &:hover .coefficient
       color: $white
@@ -74,13 +88,15 @@
     width: 30%
     margin: 0 2px
   .team-name
-    color: $eventHeadingGray
+    color: $gray-200
     max-width: 108px
   .team-coefficient
     display: flex
     align-items: center
   .coefficient
-    color: $betGold
+    color: $gold-200
+    display: flex
+
   .up
     background-position: -223px -112px
   .down
@@ -89,3 +105,9 @@
     background-position: -228px -8px
 
 
+.games-date-container
+  background-color: $gray-900
+  color: $gray-300
+  padding: 2px 0 2px 8px
+  font-size: 11px
+  height: 24px
