@@ -22,8 +22,8 @@
   .result-dropdown
     display: flex
     cursor: pointer
-    border-left: 1px solid $gray-400
-    padding: 0 0 0 6px
+    border-inline-start: 1px solid $gray-400
+    padding-inline-start: 6px
   .current-games-toggler
     display: flex
     align-items: center
@@ -31,19 +31,25 @@
     background-color: $gray-300
     font-size: 11px
     height: 22px
-    padding: 2px 0 2px 8px
+    padding-block-start: 2px
+    padding-block-end: 0
+    padding-inline-end: 2px
+    padding-inline-start: 8px
     margin: 2px 0 0 0
     .bet-arrow-up
-      margin-left: auto
+      margin-inline-start: auto
     
-.one-day-games-container
-  margin: 5px 0 0 0
+  .one-day-games-container
+    margin: 5px 0 0 0
 
-.games-date-container
-  background-color: $gray-900
-  color: $gray-300
-  padding: 2px 0 2px 8px
-  font-size: 11px
-  height: 24px
-  cursor: pointer
-  user-select: none
+  .games-date-container
+    background-color: $gray-900
+    color: $gray-300
+    padding-block-start: 2px
+    padding-block-end: 0
+    padding-inline-end: 2px
+    padding-inline-start: 8px
+    font-size: 11px
+    height: 24px
+    cursor: pointer
+    user-select: none

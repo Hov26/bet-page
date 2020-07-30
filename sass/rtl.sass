@@ -1,0 +1,9 @@
+@mixin dir-style($prop, $value, $inverse-prop, $inverse-value)
+  html[dir=ltr] &
+    #{$prop}: $value
+  
+  html[dir=rtl] &
+    @if $inverse-value == 0
+      #{$inverse-prop}: $value
+    @else
+      #{$inverse-prop}: $inverse-value

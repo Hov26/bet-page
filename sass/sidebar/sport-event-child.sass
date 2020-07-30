@@ -7,7 +7,7 @@
 .country-list-item
   background-color: $gray-1100
   color: $gray-100
-  padding-right: 0
+  padding-inline-end: 0
   &.open .arrow-up
     display: block
   &:hover
@@ -16,20 +16,21 @@
     display: block
     background-color: $gray-600
   .arrow-up
-    margin-left: auto
+    margin-inline-start: auto
 
 
 .league-list
   padding: 3px 5px 5px 5px
   background-color: $gray-1200
 .league-item
-  padding: 0 6px 0 14px
+  padding-inline-end: 6px
+  padding-inline-start: 14px
   &.active .star, &:hover .star
     background-position: -196px -10px
   &:hover, &.active
     background-color: $gray-600
   .bg-icon
-    margin-left: auto
+    margin-inline-start: auto
 
 .league-input
   padding: 0
@@ -60,4 +61,4 @@
     position: relative
     vertical-align: middle
     cursor: pointer
-    margin-right: 5px
+    margin-inline-end: 5px

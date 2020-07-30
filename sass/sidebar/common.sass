@@ -1,3 +1,5 @@
+@import '../rtl.sass'
+
 .sidebar
   width: 24%
   max-width: 265px
@@ -17,20 +19,25 @@
 
 .toggle-btn
   width: 26px
-  height: 17px
-  margin: 0 0 0 8px
+  height: 16px
+  margin-inline-start: 8px
   background: $green-200
   border-radius: 9px
   cursor: pointer
   padding: 0
+  position: relative
   .round
     width: 13px
     height: 13px
     border-radius: 50%
     background: $white
     transition: all 0.1s ease
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    @include dir-style(left, 2px, right, 2px)
     &.active
-      transform: translate(11px, 0px)
+      @include dir-style(left, 11px, right, 11px)
 
 .divider
   width: 100%
@@ -80,7 +87,7 @@
   background-repeat: no-repeat
   width: 20px
   height: 14px
-  margin: 0 6px 0 0
+  margin-inline-end: 6px
   &.spain
     background-position: -158px -42px
   &.italy
