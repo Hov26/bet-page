@@ -23,17 +23,17 @@
           <div class="view-tabs">
             <ul class="view-items-wrapper">
               <li class="view-list-items dashboard">
-                <button class="tab-btn jc-c">
+                <button class="tab-btn jc-c" aria-label='dashboard'>
                   <div class="bg-icon dashboard-icon"></div>
                 </button>
               </li>
               <li class="view-list-items live">
-                <button class="tab-btn jc-sb">
+                <button class="tab-btn jc-sb" aria-label='Live events'>
                   LIVE <span class="event-count">45</span>
                 </button>
               </li>
               <li class="view-list-items pre-match">
-                <button class="tab-btn jc-sb active">
+                <button class="tab-btn jc-sb active" aria-label='Pre-match events'>
                   PRE-MATCH <span class="event-count">657</span>
                 </button>
               </li>
@@ -49,15 +49,15 @@
                 </div>
               </li>
               <li class="view-tab play-tab">
-                <button class="tab bg-icon play-icon"></button>
+                <button class="tab bg-icon play-icon" aria-label="play"></button>
               </li>
               <li class="view-tab mouse-tab">
-                <button class="tab bg-icon mouse-icon"></button>
+                <button class="tab bg-icon mouse-icon" aria-label="mouse"></button>
               </li>
               <li class="view-tab multi-tab">
                 <div class="tab multi-select">
                   <p>Multi-selection</p>
-                  <button class="toggle-btn">
+                  <button class="toggle-btn" aria-label="multi selection">
                     <div class="round active"></div>
                   </button>
                 </div>
@@ -69,10 +69,11 @@
                   type="text"
                   placeholder="Competition or a team"
                   class="search-input"
+                  aria-label="Competition or a team"
                 />
-                <button type="submit" class="search-btn"></button>
+                <button type="submit" class="search-btn" aria-label="search"></button>
               </form>
-              <button class="minimize-sidebar">
+              <button class="minimize-sidebar" aria-label="minimize">
                 <div class="minimize-icon bg-icon"></div>
               </button>
             </div>
@@ -85,7 +86,7 @@
                   Favourites
                 </div>
                 <div class="games-count">111</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">Favourite content</div>
             </div>
@@ -96,10 +97,10 @@
                   My Favourite team
                 </div>
                 <div class="game-info">
-                  <button class="bg-icon info-icon"></button>
+                  <button class="bg-icon info-icon" aria-label="info"></button>
                   <div class="games-count">4</div>
                 </div>
-                <button class="arrow-up open"></button>
+                <button class="arrow-up open" aria-label="open events"></button>
               </div>
               <div class="countries-list-wrapper favourite-form-wrapper">
                 <form action="" class="search-form">
@@ -107,11 +108,12 @@
                     type="text"
                     placeholder="Competition or a team"
                     class="search-input"
+                    aria-label="Competition or a team"
                   />
-                  <button type="submit" class="search-btn"></button>
+                  <button type="submit" class="search-btn" aria-label="search"></button>
                   <div class="form-group">
-                    <button type="submit" class="form-btn active">CONFIRM</button>
-                    <button type="reset" class="form-btn">CANCEL</button>
+                    <button type="submit" class="form-btn active" aria-label="confirm">CONFIRM</button>
+                    <button type="reset" class="form-btn" aria-label="cancel">CANCEL</button>
                   </div>
                 </form>
                 <div class="divider"></div>
@@ -129,7 +131,7 @@
                   Popular
                 </div>
                 <div class="games-count">7</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="countries-list-wrapper">
                 <ul class="popular-list">
@@ -156,7 +158,7 @@
                   Football
                 </div>
                 <div class="games-count">1578</div>
-                <button class="arrow-up open green"></button>
+                <button class="arrow-up open green" aria-label="more events"></button>
               </div>
               <div class="countries-list-wrapper">
                 <ul class="countries-list">
@@ -164,35 +166,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -205,7 +207,7 @@
                   Tennis
                 </div>
                 <div class="games-count">587</div>
-                <button class="arrow-up open yellow"></button>
+                <button class="arrow-up open yellow" aria-label="more events"></button>
               </div>
               <div class="countries-list-wrapper">
                 <ul class="countries-list">
@@ -213,21 +215,21 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling active">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                     <ul class="league-list">
                       <li class="league-item active list-item top-radius">
@@ -271,14 +273,14 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -291,7 +293,7 @@
                   Basketball
                 </div>
                 <div class="games-count">587</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -299,35 +301,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -340,7 +342,7 @@
                   Valeyball
                 </div>
                 <div class="games-count">50</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -348,35 +350,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -389,7 +391,7 @@
                   Ice Hockey
                 </div>
                 <div class="games-count">111</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -397,35 +399,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -438,7 +440,7 @@
                   Baseball
                 </div>
                 <div class="games-count">587</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -446,35 +448,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -487,7 +489,7 @@
                   American Football
                 </div>
                 <div class="games-count">50</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -495,35 +497,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -536,7 +538,7 @@
                   More sports
                 </div>
                 <div class="games-count">+34</div>
-                <button class="arrow-up"></button>
+                <button class="arrow-up" aria-label="more events"></button>
               </div>
               <div class="hide countries-list-wrapper">
                 <ul class="countries-list">
@@ -544,35 +546,35 @@
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag spain"></div>
                       <span>Spain</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag italy"></div>
                       <span>Italy</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag uk"></div>
                       <span>United Kingdom</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag jp"></div>
                       <span>Japan</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                   <li class="country-list-item-wrapper">
                     <div class="list-item country-list-item toggle-nextSibling">
                       <div class="bg-flag argentina"></div>
                       <span>Argentina</span>
-                      <button class="arrow-up hidden"></button>
+                      <button class="arrow-up hidden" aria-label="dropdown"></button>
                     </div>
                   </li>
                 </ul>
@@ -585,35 +587,35 @@
                       <div class="list-item country-list-item toggle-nextSibling">
                         <div class="bg-flag spain"></div>
                         <span>Spain</span>
-                        <button class="arrow-up hidden"></button>
+                        <button class="arrow-up hidden" aria-label="dropdown"></button>
                       </div>
                     </li>
                     <li class="country-list-item-wrapper">
                       <div class="list-item country-list-item toggle-nextSibling">
                         <div class="bg-flag italy"></div>
                         <span>Italy</span>
-                        <button class="arrow-up hidden"></button>
+                        <button class="arrow-up hidden" aria-label="dropdown"></button>
                       </div>
                     </li>
                     <li class="country-list-item-wrapper">
                       <div class="list-item country-list-item toggle-nextSibling">
                         <div class="bg-flag uk"></div>
                         <span>United Kingdom</span>
-                        <button class="arrow-up hidden"></button>
+                        <button class="arrow-up hidden" aria-label="dropdown"></button>
                       </div>
                     </li>
                     <li class="country-list-item-wrapper">
                       <div class="list-item country-list-item toggle-nextSibling">
                         <div class="bg-flag jp"></div>
                         <span>Japan</span>
-                        <button class="arrow-up hidden"></button>
+                        <button class="arrow-up hidden" aria-label="dropdown"></button>
                       </div>
                     </li>
                     <li class="country-list-item-wrapper">
                       <div class="list-item country-list-item toggle-nextSibling">
                         <div class="bg-flag argentina"></div>
                         <span>Argentina</span>
-                        <button class="arrow-up hidden"></button>
+                        <button class="arrow-up hidden" aria-label="dropdown"></button>
                       </div>
                     </li>
                   </ul>
@@ -634,14 +636,14 @@
               </div>
             </div>
             <div class="current-games-toggler" role="button">
-              <button class="bg-icon close-icon"></button>
+              <button class="bg-icon close-icon" aria-label="close"></button>
               <span>FOOTBALL. ITALY - SERIE A</span>
               <div class="arrow-up bet-arrow-up"></div>
             </div>
             <div class="one-day-games-container">
               <div class="games-date-container toggle-nextSibling flex-jc-ac top-radius">
                 <div class="games-date">TODAY. JULY 31, 2020</div>
-                <button class="arrow-up bet-arrow-up"></button>
+                <button class="arrow-up bet-arrow-up" aria-label="today games"></button>
               </div>
               <div class="games-list">
                 <div class="game-item">
@@ -657,11 +659,11 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon tv"></button>
-                      <button class="bg-icon play"></button>
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon tv" aria-label="tv"></button>
+                      <button class="bg-icon play" aria-label="play"></button>
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+144</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -704,8 +706,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+14</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -739,7 +741,7 @@
             <div class="one-day-games-container">
               <div class="games-date-container toggle-nextSibling flex-jc-ac top-radius">
                 <div class="games-date">TOMMOROW. APRIL 2, 2020</div>
-                <button class="arrow-up bet-arrow-up"></button>
+                <button class="arrow-up bet-arrow-up" aria-label="current day events"></button>
               </div>
               <div class="games-list">
                 <div class="game-item">
@@ -757,8 +759,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+56</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -805,9 +807,9 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -849,8 +851,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+144</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -893,9 +895,9 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star star-filled"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star star-filled" aria-label="favourites"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -939,8 +941,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -987,14 +989,14 @@
               </div>
             </div>
             <div class="current-games-toggler" role="button">
-              <button class="bg-icon close-icon"></button>
+              <button class="bg-icon close-icon" aria-label="close"></button>
               <span>FOOTBALL. ITALY - SERIE A</span>
               <div class="arrow-up bet-arrow-up"></div>
             </div>
             <div class="one-day-games-container">
               <div class="games-date-container toggle-nextSibling flex-jc-ac top-radius">
                 <div class="games-date">TODAY. JULY 31, 2020</div>
-                <button class="arrow-up bet-arrow-up"></button>
+                <button class="arrow-up bet-arrow-up" aria-label="current day events"></button>
               </div>
               <div class="games-list">
                 <div class="game-item">
@@ -1010,11 +1012,11 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon tv"></button>
-                      <button class="bg-icon play"></button>
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon tv" aria-label="tv"></button>
+                      <button class="bg-icon play" aria-label="play"></button>
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+144</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1057,8 +1059,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+14</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1092,7 +1094,7 @@
             <div class="one-day-games-container">
               <div class="games-date-container toggle-nextSibling flex-jc-ac top-radius">
                 <div class="games-date">TOMMOROW. APRIL 2, 2020</div>
-                <button class="arrow-up bet-arrow-up"></button>
+                <button class="arrow-up bet-arrow-up" aria-label="current day events"></button>
               </div>
               <div class="games-list">
                 <div class="game-item">
@@ -1110,8 +1112,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+56</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1158,9 +1160,9 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1202,8 +1204,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+144</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1246,9 +1248,9 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon statistic"></button>
-                      <button class="bg-icon star star-filled"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon statistic" aria-label="statistic"></button>
+                      <button class="bg-icon star star-filled" aria-label="favourites"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
@@ -1290,8 +1292,8 @@
                       </div>
                     </div>
                     <div class="game-more-events">
-                      <button class="bg-icon star"></button>
-                      <button class="event-count-btn">
+                      <button class="bg-icon star" aria-label="favourite"></button>
+                      <button class="event-count-btn" aria-label="more events">
                         <p class="events-count">+32</p>
                         <div class="bg-icon arrow-right"></div>
                       </button>
