@@ -1,16 +1,15 @@
-var accordionWrapperNode = document.getElementsByClassName("acc-wrapper")[0];
-var accordionHeadline = accordionWrapperNode.getElementsByClassName("acc-item");
+const toggleParentItem = document.getElementsByClassName("toggle-nextSibling");
 
-function accordionToggle(e) {
+function toggleList(e) {
   e.preventDefault();
-  var accordionContent = this.nextSibling.nextSibling;
-  if (accordionContent.classList.contains("hide")) {
-    accordionContent.className = "";
+  let currentList = this.nextElementSibling;
+  if (currentList.classList.contains("hide")) {
+    currentList.classList.remove("hide");
   } else {
-    accordionContent.className = "hide";
+    currentList.classList.add("hide");
   }
 }
 
-for (var i = 0; i < accordionHeadline.length; i++) {
-  accordionHeadline[i].addEventListener("click", accordionToggle);
+for (let i = 0; i < toggleParentItem.length; i++) {
+  toggleParentItem[i].addEventListener("click", toggleList);
 }

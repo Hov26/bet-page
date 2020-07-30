@@ -5,9 +5,13 @@
     color: $gray-050
 
 .country-list-item
-  background-color: $gray-700
+  background-color: $gray-1100
   color: $gray-100
   padding-right: 0
+  &.open .arrow-up
+    display: block
+  &:hover
+    background-color: $gray-700
   &:hover .arrow-up
     display: block
     background-color: $gray-600

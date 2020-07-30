@@ -1,3 +1,9 @@
+.sidebar
+  width: 24%
+  max-width: 265px
+  flex-grow: 1
+  margin: 2px
+  
 .list-item
   height: 30px
   background-color: $gray-700
@@ -41,6 +47,10 @@
   transition: all 0.1s linear
   background-image: url('../img/img_sprites.png')
   background-position: -27px -172px
+  &.yellow
+    background-color: $dirtyYellow
+  &.green
+    background-color: $green-200
   &.bet-arrow-up
     width: 24px
     height: 24px
@@ -49,8 +59,6 @@
     background-color: $green-200
   &.open
     transform: rotate(180deg)
-  &:hover
-    background-color: $gray-600
   &.hidden
     display: none
 
@@ -83,11 +91,9 @@
   &.argentina
     background-position: -10px -119px
 
-
 .dashboard-icon
   background-position: -10px -151px
 
-  
 .favourite-icon
   background-position: -46px -83px
 

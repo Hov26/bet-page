@@ -18,7 +18,7 @@
   .game-header
     font-size: 11px
     height: 30px
-    padding: 2px 0 2px 8px
+    padding: 2px 2px 2px 8px
     box-sizing: border-box
     background-color: $gray-600
     border-top: 1px solid $gray-500
@@ -46,8 +46,6 @@
     display: flex
     & > .bg-icon
       width: 24px
-  .bg-icon
-    & + .bg-icon
       border-right: 1px solid $gray-800
   .star
     margin: 0 2px
@@ -96,7 +94,6 @@
   .coefficient
     color: $gold-200
     display: flex
-
   .up
     background-position: -223px -112px
   .down
@@ -104,10 +101,11 @@
   .x-icon
     background-position: -228px -8px
 
-
 .games-date-container
   background-color: $gray-900
   color: $gray-300
   padding: 2px 0 2px 8px
   font-size: 11px
   height: 24px
+  cursor: pointer
+  user-select: none

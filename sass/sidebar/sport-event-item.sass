@@ -1,15 +1,17 @@
-.acc-wrapper
+.sport-events-menu
   margin: 4px 0 0 0
 
-.acc-item
-  background: $gray-600
+.sport-event-item
+  background-color: $gray-650
   color: $gray-200
   padding: 0 0 0 8px
   height: 30px
   font-size: 12px
-  margin: 2px 0 0 0
+  margin: 0 0 2px 0
   user-select: none
   cursor: pointer
+  &:hover
+    background-color: $gray-400
   .games-count
     text-align: right
     margin-left: auto
@@ -26,11 +28,14 @@
     margin-left: auto
     margin-right: 6px
 
-#accContent
-  background: $gray-1000
-  padding: 5px 2px
+.countries-list-wrapper
+  background: $gray-1200
+  padding: 5px
+  border-right: 1px solid $gray-600
+  border-left: 1px solid $gray-600
+  color: $white
 
-.acc-heading
+.sport-event-item-heading
   display: flex
   align-items: center
   color: $gray-050
