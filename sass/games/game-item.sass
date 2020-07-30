@@ -1,0 +1,81 @@
+.game-item
+  margin: 4px 0 0 0
+  .game-header
+    font-size: 11px
+    height: 30px
+    padding: 2px 2px 2px 8px
+    box-sizing: border-box
+    background-color: $gray-600
+    border-top: 1px solid $gray-500
+    transition: all 0.1s linear
+    &:hover
+      background-color: $gray-300
+  .game-info
+    display: flex
+  .game-time, .vs, .events-count
+    color: $gray-100
+  .vs
+    padding: 0 6px
+  .game-name
+    display: flex
+    color: $gray-050
+    margin: 0 0 0 6px
+  .game-team-team
+    max-width: 110px
+  .arrow-right
+    background-position: -222px -37px
+  .events-count
+    padding: 0 2px 0 4px
+    min-width: 31px
+  .game-more-events
+    display: flex
+    & > .bg-icon
+      width: 24px
+      border-right: 1px solid $gray-800
+  .star
+    margin: 0 2px
+    background-position-x: -191px
+  .statistic
+    background-position: -189px -135px
+  .play
+    background-position: -190px -73px
+  .tv
+    background-position: -102px -148px
+  .game-body
+    display: flex
+    align-items: center
+    height: 28px
+    margin: 2px 0 0 0
+  .game-col
+    background-color: $gray-1100
+    border-top: 1px solid $gray-900
+    height: 28px
+    font-size: 12px
+    padding: 0 8px
+    transition: all 0.1s linear
+    cursor: pointer
+    &:first-child
+      border-bottom-left-radius: 2px
+    &:last-child
+      border-bottom-right-radius: 2px
+    &:hover
+      background-color: $gray-400
+    &.active
+      background-color: $pink
+    &:hover .team-name, &:hover .coefficient
+      color: $white
+  .result-col
+    width: 35%
+    flex-grow: 1
+  .x-result-col
+    width: 30%
+    margin: 0 2px
+  .team-name
+    color: $gray-200
+    max-width: 108px
+  .team-coefficient
+    display: flex
+    align-items: center
+  .coefficient
+    color: $gold-200
+    display: flex
