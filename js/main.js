@@ -12,6 +12,11 @@ function toggleList(e) {
     currentItem.classList.remove("active");
   }
 }
+if (toggleParentItem = 0) {
+  console.log('toggleParentItem')
+} else {
+  console.log('else toggleParentItem')
+}
 
 for (let i = 0; i < toggleParentItem.length; i++) {
   toggleParentItem[i].addEventListener("click", toggleList);
