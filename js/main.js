@@ -4,6 +4,7 @@ function toggleList(e) {
   e.preventDefault();
   let currentList = this.nextElementSibling;
   let currentItem = this;
+  console.log('aaaa');
   if (currentList.classList.contains("hide")) {
     currentList.classList.remove("hide");
     currentItem.classList.add("active");
